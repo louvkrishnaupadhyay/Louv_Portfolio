@@ -19,7 +19,7 @@ export const skills = [
   { name: "JavaScript", detail: "ES6+ Full-Stack", category: "languages" },
   { name: "SQL", detail: "Relational Queries", category: "languages" },
   // Frontend
-  { name: "React.js", detail: "Single Page Apps", category: "frontend" },
+  { name: "React.js", detail: "multi Page Apps", category: "frontend" },
   { name: "HTML5 & CSS3", detail: "Responsive UI", category: "frontend" },
   { name: "React Router", detail: "Client Routing", category: "frontend" },
   // Backend & DB
