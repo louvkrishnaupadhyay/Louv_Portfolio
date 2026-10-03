@@ -32,6 +32,8 @@ export default function Hero() {
     <section id="hero" className="min-h-screen pt-28 pb-16 flex items-center relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Left Column: Intro & CTA */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
@@ -50,6 +52,7 @@ export default function Hero() {
               Computer Science Engineering student at <strong className="text-slate-200">IIIT Senapati, Manipur</strong> with a passion for high-performance backend systems, real-time web applications, and algorithmic problem-solving.
             </p>
 
+            {/* Metrics Counter */}
             <div className="grid grid-cols-3 gap-4 pt-2 max-w-lg border-y border-slate-800/80 py-4">
               <div>
                 <div className="text-2xl font-bold text-white font-mono">{personalInfo.leetcodeSolved}</div>
@@ -65,6 +68,7 @@ export default function Hero() {
               </div>
             </div>
 
+            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-2">
               <a href="#projects" className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold rounded-lg transition-all flex items-center space-x-2">
                 <span>View My Work</span>
@@ -77,31 +81,36 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Right Column: Multi-line C++ Code Card */}
           <div className="lg:col-span-5">
             <div className="rounded-xl bg-slate-900 border border-slate-800 p-4 shadow-2xl glow-effect">
               <div className="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                  <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
                 </div>
                 <span className="text-xs font-mono text-slate-500">developer.cpp</span>
               </div>
-              <pre className="font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto space-y-1"><code><span className="text-purple-400">#include</span> <span className="text-emerald-400">&lt;iostream&gt;</span>
-<span className="text-purple-400">#include</span> <span className="text-emerald-400">&lt;vector&gt;</span>
-
-<span className="text-blue-400">class</span> <span className="text-yellow-300">SoftwareEngineer</span> &#123;
-<span className="text-blue-400">public</span>:
-    std::string name = <span className="text-emerald-300">"{personalInfo.name}"</span>;
-    std::string college = <span class="text-emerald-300">"IIIT Manipur"</span>;
-    <span className="text-blue-400">int</span> gradYear = <span className="text-orange-400">2028</span>;
-    
-    std::vector&lt;std::string&gt; stack = &#123;
-        <span className="text-emerald-300">"C++"</span>, <span className="text-emerald-300">"React.js"</span>, <span className="text-emerald-300">"Node.js"</span>
-    &#125;;
-&#125;;</code></pre>
+              
+              <pre className="font-mono text-xs sm:text-sm text-slate-300 overflow-x-auto whitespace-pre leading-relaxed">
+                <div><span className="text-purple-400">#include</span> <span className="text-emerald-400">&lt;iostream&gt;</span></div>
+                <div><span className="text-purple-400">#include</span> <span className="text-emerald-400">&lt;vector&gt;</span></div>
+                <br />
+                <div><span className="text-blue-400">class</span> <span className="text-yellow-300">SoftwareEngineer</span> &#123;</div>
+                <div><span className="text-blue-400">public</span>:</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;std::string name = <span className="text-emerald-300">"{personalInfo.name}"</span>;</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;std::string college = <span className="text-emerald-300">"IIIT Manipur"</span>;</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">int</span> gradYear = <span className="text-orange-400">2028</span>;</div>
+                <br />
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;std::vector&lt;std::string&gt; stack = &#123;</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-emerald-300">"C++"</span>, <span className="text-emerald-300">"React.js"</span>, <span className="text-emerald-300">"Node.js"</span></div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&#125;;</div>
+                <div>&#125;;</div>
+              </pre>
             </div>
           </div>
+
         </div>
       </div>
     </section>

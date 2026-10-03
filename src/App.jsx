@@ -1,4 +1,5 @@
 import React from 'react';
+import ParticleBackground from './components/ParticleBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,7 +13,9 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div class="min-h-screen">
+    <div className="min-h-screen relative text-slate-200">
+      <ParticleBackground />
+      
       <Navbar />
       <Hero />
       <About />
